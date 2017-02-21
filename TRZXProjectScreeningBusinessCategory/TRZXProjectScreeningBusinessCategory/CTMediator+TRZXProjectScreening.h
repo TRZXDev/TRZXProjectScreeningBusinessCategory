@@ -8,7 +8,7 @@
 
 #import <CTMediator/CTMediator.h>
 #import <UIKit/UIKit.h>
-typedef void(^confirmCompleteBlock)(id message);
+typedef void(^confirmCompleteBlock)(NSString *trade,NSString *stage);
 
 @interface CTMediator (TRZXProjectScreening)
 - (UIViewController *)projectScreeningViewControllerWithScreeningType:(NSString *)screeningType projectTitle:(NSString *)projectTitle confirmComplete:(confirmCompleteBlock)confirmComplete;
